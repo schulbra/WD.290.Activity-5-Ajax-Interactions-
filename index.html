@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<head>
+    <title>
+        Assignment Five: AJAX Interactions
+    </title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+</head>
+<body>
+
+    <h3>
+        Weather GET Requests to "http://api.openweathermap.org/data/2.5/weather?":
+    </h3>
+
+    <div class="col-sm-6">
+        <form class="form-horizontal">
+
+            <div class="form-group">
+                <label class="col-sm-4 control-label">City:</label>
+                <div class="col-sm-4">
+                    <input class="form-control" type="text" id="cityLookUpTemp" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Zip:</label>
+                <div class="col-sm-4">
+                    <input class="form-control" type="number" id="zipLookUpTemp" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button class="btn btn-default" type="submit" id="weatherLookUp">
+                        Submit
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="col-sm-6">
+        <form class="form-horizontal">
+
+            <div class="form-group">
+                <label class="col-sm-4 control-label">City:</label>
+                <div class="col-sm-4">
+                    <div id="city" class="form-control"></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-4 control-label">Temperature Now:</label>
+                <div class="col-sm-4">
+                    <div id="temperature" class="form-control"></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-4 control-label">24hr High:</label>
+                <div class="col-sm-4">
+                    <div id="24hrHigh" class="form-control"></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-4 control-label">24hr Low:</label>
+                <div class="col-sm-4">
+                    <div id="24hrLow" class="form-control"></div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <h3>
+        Post Form that submits to http://httpbin.org/post:
+    </h3>
+
+    <div class="col-sm-6">
+        <form class="form-horizontal col-sm-6">
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Name:</label>
+                <div class="col-sm-8">
+                    <input class="form-control" id="in-name" type="text" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Social:</label>
+                <div class="col-sm-8">
+                    <input class="form-control" id="in-social" type="number" />
+                </div>
+            </div>
+
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-default" type="submit" id="pasteSubmit">
+                    Submit
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="col-sm-6">
+        <form class="form-horizontal col-sm-6">
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Name:</label>
+                <div class="col-sm-8">
+                    <div id="out-name" class="form-control"></div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Social:</label>
+                <div class="col-sm-8">
+                    <div id="out-social" class="form-control"></div>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
